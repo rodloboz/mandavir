@@ -20,6 +20,9 @@ config :mandavir, MandavirWeb.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
+  live_view: [
+    signing_salt: "00TBNXoOG0+QjSgXS1CF+QcLd/KJWPBs"
+  ],
   watchers: [
     node: [
       "node_modules/webpack/bin/webpack.js",
@@ -61,7 +64,8 @@ config :mandavir, MandavirWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/mandavir_web/{live,views}/.*(ex)$",
-      ~r"lib/mandavir_web/templates/.*(eex)$"
+      ~r"lib/mandavir_web/templates/.*(eex)$",
+      ~r"lib/mandavir_web/live/.*(ex)$"
     ]
   ]
 

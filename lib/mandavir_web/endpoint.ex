@@ -1,6 +1,8 @@
 defmodule MandavirWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :mandavir
 
+  socket "/live", Phoenix.LiveView.Socket
+
   socket "/socket", MandavirWeb.UserSocket,
     websocket: true,
     longpoll: false
