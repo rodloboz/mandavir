@@ -1,9 +1,7 @@
 
 import css from '../css/app.scss';
-require('turbolinks').start();
+
+import './vendor/stimulus';
+import './vendor/turbolinks';
 
 import 'phoenix_html';
-
-document.addEventListener('turbolinks:load', () => {
-  console.log('Hello from webpacker!');
-});
