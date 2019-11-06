@@ -1,3 +1,5 @@
-<h1>Welcome to Pages Controller</h1>
+<section data-controller="page">
+  <h1>Welcome to Pages Controller</h1>
 
-<button class="btn btn-blue ml-4">A Button</button>
+  <button class="btn btn-blue ml-4">A Button</button>
+</section>
